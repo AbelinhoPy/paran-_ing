@@ -1,4 +1,4 @@
-// Configuración del slider Swiper
+// Configuración del slider Swiper para la sección principal
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 1,
     centeredSlides: true,
@@ -11,6 +11,25 @@ var swiper = new Swiper(".mySwiper", {
     },
     breakpoints: {
         991: {
+            slidesPerView: 3
+        }
+    }
+});
+
+// Configuración del slider Swiper para la sección "Nuestros Trabajos"
+var swiperTrabajos = new Swiper(".mySwiperTrabajos", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 1
+        },
+        1024: {
             slidesPerView: 3
         }
     }
