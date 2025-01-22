@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing</title>
+    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap&display=swap');
+
+        :root {
+            --primary-color: #266371;
+            --secondary-color: #099fa6;
+            --text-color: #FFFFFF;
+            --font-main: 'Roboto Condensed', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            list-style: none;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: url('images/bg.webp') center center/cover no-repeat;
+            display: flex;
+            position: relative;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .menu {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            z-index: 10;
+        }
+
+        .logo {
+            color: var(--text-color);
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .menu .navbar ul {
+            display: flex;
+        }
+
+        .menu .navbar ul li a {
+            font-size: 18px;
+            padding: 10px 20px;
+            color: var(--text-color);
+            font-weight: bold;
+            display: block;
+            transition: color 0.3s ease;
+        }
+
+        .menu .navbar ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .header-txt {
+            width: 40%;
+        }
+
+        .header-txt h1 {
+            font-size: 70px;
+            line-height: 88px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--primary-color);
+            margin-bottom: 25px;
+            font-family: var(--font-main);
+        }
+
+        .btn-1 {
+            display: inline-block;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            color: var(--text-color);
+            background-color: var(--secondary-color);
+            font-family: var(--font-main);
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-1:hover {
+            background-color: var(--primary-color);
+        }
+
+        .images {
+            width: 800px;
+            height: 380px;
+            position: absolute;
+            right: 50px;
+            bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+       <div class="menu container">
+        <a href="#" class="logo">Destino</a>
+        <input type="checkbox" id="menu" />
+        <label for="menu" class="menu-label">
+            <img src="images/menu.png" class="menu-icono" alt="Abrir menú">
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Productos</a></li>
+                <li><a href="#">Reservaciones</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+       </div>
+       <div class="header-content container">
+           <h1>ELIGE TU PLAYA FAVORITA AHORA</h1>
+           <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+             Numquam facere ea iusto molestias nam? Sint commodi natus placeat
+              labore autem laborum voluptatum cupiditate repellat iusto consectetur 
+              praesentium voluptatibus, doloribus reiciendis!
+           </p>
+           <a href="#" class="btn-1">SECCIÓN MENÚ</a>
+       </div>
+    </header>
+</body>
+</html>

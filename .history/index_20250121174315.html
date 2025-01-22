@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraná Ingeniería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#inicio" class="logo">Paraná Ingeniería</a>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="inicio">
+        <h1>Ingeniería que construye el futuro</h1>
+        <p>Proporcionamos soluciones innovadoras y de alta calidad en la construcción de galpones industriales y almacenes.</p>
+        <a href="#nosotros" class="btn">Conócenos</a>
+    </section>
+
+    <section id="nosotros" class="nosotros">
+        <h2>SOBRE NOSOTROS</h2>
+        <div class="nosotros-content">
+            <div class="nosotros-left">
+                <img src="images/111.jpg" alt="Sobre Nosotros">
+                <div class="nosotros-stats">
+                    <div class="nosotros-box">
+                        <h3>1990</h3>
+                        <p>Desde</p>
+                    </div>
+                    <img src="images/222.jpg" alt="Galpón">
+                    <div class="nosotros-box">
+                        <h3>+ DE 30</h3>
+                        <p>Años de Actividad</p>
+                    </div>
+                </div>
+            </div>
+            <div class="nosotros-right">
+                <h3>MAG INGENIERIA</h3>
+                <ul class="nosotros-tabs">
+                    <li>Historia</li>
+                    <li>Ingenieros</li>
+                    <li>Misión y Visión</li>
+                    <li>Valores</li>
+                </ul>
+                <p>Somos una empresa líder en ingeniería con años de experiencia en el diseño, construcción y mantenimiento de proyectos industriales. Nuestra misión es proporcionar soluciones eficientes y sostenibles adaptadas a las necesidades de nuestros clientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #266371;
+    --secondary-color: #099fa6;
+    --text-color: #FFFFFF;
+    --font-main: 'Roboto Condensed', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    background-image: url(images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    z-index: 10;
+}
+
+.logo {
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.menu .navbar ul {
+    display: flex;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: bold;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.menu .navbar ul li a:hover {
+    color: var(--primary-color);
+}
+
+.header-txt {
+    width: 40%;
+    max-width: 600px;
+}
+
+.header-txt h1 {
+    font-size: 60px;
+    line-height: 75px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    font-family: var(--font-main);
+}
+
+.header-txt p {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    font-family: var(--font-main);
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-1:hover {
+    background-color: var(--primary-color);
+}
+
+.images {
+    display: flex;
+    gap: 20px;
+    width: 800px;
+    height: 380px;
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+}
+
+.images .swiper-slide {
+    border-radius: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.images .swiper-slide:hover {
+    transform: scale(1.05);
+}
+
+.swiper-slide h3 {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 28px;
+}
