@@ -386,11 +386,6 @@ body {
         max-width: 100%;
         height: auto;
     }
-    .nosotros-box {
-        max-width: 100%;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
 
     .nosotros-right {
         max-width: 90%;
@@ -402,24 +397,8 @@ body {
 
     .nosotros-right p {
         font-size: 16px;
-        text-align: center;
-        padding: 0 20px;
     }
 }
-@media (max-width: 768px) {
-    .nosotros-stats {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        gap: 20px;
-    }
-
-    .nosotros-box {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
 @media (max-width: 768px) {
     .nosotros-tabs {
         flex-wrap: wrap;

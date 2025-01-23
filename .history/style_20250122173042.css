@@ -45,7 +45,7 @@ body {
 }
 
 .menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -56,7 +56,6 @@ body {
     background: rgba(0, 0, 0, 0.5);
     z-index: 1000;
     width: 100vw; 
-    max-width: 100%;
 }
 
 .logo {
@@ -114,7 +113,7 @@ body {
 }
 
 .header-content h1 {
-    font-size: 32px;
+    font-size: 60px;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -202,7 +201,7 @@ body {
 }
 
 /* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .menu .navbar {
         display: none;
         flex-direction: column;
@@ -217,7 +216,7 @@ body {
 
     .menu .navbar ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
     }
 
     .menu-icono {
@@ -229,7 +228,7 @@ body {
     }
 
     .icons {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 }
 .nosotros {
@@ -373,66 +372,6 @@ body {
     color: #444;
     line-height: 1.6;
 }
-@media (max-width: 768px) {
-    .nosotros-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 30px;
-        padding: 0 20px;
-    }
-
-    .nosotros-left img {
-        max-width: 100%;
-        height: auto;
-    }
-    .nosotros-box {
-        max-width: 100%;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-
-    .nosotros-right {
-        max-width: 90%;
-    }
-
-    .nosotros-right h3 {
-        font-size: 24px;
-    }
-
-    .nosotros-right p {
-        font-size: 16px;
-        text-align: center;
-        padding: 0 20px;
-    }
-}
-@media (max-width: 768px) {
-    .nosotros-stats {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        gap: 20px;
-    }
-
-    .nosotros-box {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
-@media (max-width: 768px) {
-    .nosotros-tabs {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .nosotros-tabs li {
-        font-size: 16px;
-        padding: 5px 10px;
-    }
-}
-
 
 /* Responsivo */
 @media (max-width: 768px) {

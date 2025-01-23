@@ -38,7 +38,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
 }
 #menu {
     display: none;
@@ -53,10 +53,8 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 15px 50px;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-    width: 100vw; 
-    max-width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: 10;
 }
 
 .logo {
@@ -114,7 +112,7 @@ body {
 }
 
 .header-content h1 {
-    font-size: 32px;
+    font-size: 60px;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -202,7 +200,7 @@ body {
 }
 
 /* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 991px) {
     .menu .navbar {
         display: none;
         flex-direction: column;
@@ -217,7 +215,7 @@ body {
 
     .menu .navbar ul {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
     }
 
     .menu-icono {
@@ -229,7 +227,7 @@ body {
     }
 
     .icons {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 }
 .nosotros {
@@ -373,66 +371,6 @@ body {
     color: #444;
     line-height: 1.6;
 }
-@media (max-width: 768px) {
-    .nosotros-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 30px;
-        padding: 0 20px;
-    }
-
-    .nosotros-left img {
-        max-width: 100%;
-        height: auto;
-    }
-    .nosotros-box {
-        max-width: 100%;
-        padding: 20px;
-        margin-bottom: 20px;
-    }
-
-    .nosotros-right {
-        max-width: 90%;
-    }
-
-    .nosotros-right h3 {
-        font-size: 24px;
-    }
-
-    .nosotros-right p {
-        font-size: 16px;
-        text-align: center;
-        padding: 0 20px;
-    }
-}
-@media (max-width: 768px) {
-    .nosotros-stats {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        gap: 20px;
-    }
-
-    .nosotros-box {
-        width: 100%;
-        max-width: 300px;
-    }
-}
-
-@media (max-width: 768px) {
-    .nosotros-tabs {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .nosotros-tabs li {
-        font-size: 16px;
-        padding: 5px 10px;
-    }
-}
-
 
 /* Responsivo */
 @media (max-width: 768px) {
@@ -583,73 +521,99 @@ body {
         padding: 10px 15px;
     }
 }
-.contacto, .footer {
-    width: 100%;
-    padding: 80px 50px;
+.contacto {
     background-color: #f8f9fa;
-    box-sizing: border-box;
+    padding: 80px 0;
+    text-align: center;
 }
 
-.contacto-container, .footer-container {
-    max-width: 1200px;
+.contacto .container {
+    max-width: 700px;
     margin: 0 auto;
-    text-align: center;
-    background: #fff;
+    background: #f1f3f5;
     padding: 50px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.contacto h2, .footer h4 {
-    font-size: 28px;
+.contacto h2 {
+    font-size: 32px;
     font-weight: bold;
     color: #333;
     margin-bottom: 20px;
 }
 
 .contacto p {
-    font-size: 18px;
+    font-size: 16px;
     color: #666;
     margin-bottom: 30px;
 }
 
-.contacto form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.contact-form .input-group {
+    margin-bottom: 20px;
 }
 
-.contacto input, 
-.contacto textarea {
+.contact-form input,
+.contact-form textarea {
     width: 100%;
     padding: 15px;
-    font-size: 16px;
-    border: 1px solid #ddd;
+    border: none;
     border-radius: 8px;
+    font-size: 16px;
+    background: #eceff1;
     outline: none;
 }
 
-.contacto button {
-    padding: 15px 35px;
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+.btn-enviar {
+    display: inline-block;
+    padding: 15px 30px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    background: #fff;
+    color: #000;
     font-size: 18px;
     font-weight: bold;
-    background-color: #099fa6;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.contacto button:hover {
-    background-color: #07798c;
+.btn-enviar:hover {
+    background: #000;
+    color: #fff;
 }
 
-/* Footer */
+@media (max-width: 768px) {
+    .contacto .container {
+        padding: 30px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .btn-enviar {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
 .footer {
-    text-align: center;
     background-color: #f8f9fa;
     padding: 40px 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer-content {
@@ -657,42 +621,72 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-social, 
-.footer-info, 
-.footer-contact {
-    flex: 1;
     text-align: left;
-    padding: 20px;
 }
 
+.footer-social h4,
+.footer-info h4,
+.footer-contact h4 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.footer-info p,
+.footer-contact p,
 .footer-contact a {
+    font-size: 16px;
+    color: #555;
+    text-decoration: none;
+}
+
+.footer-contact .phone {
     font-size: 20px;
     font-weight: bold;
     color: #004085;
-    text-decoration: none;
 }
 
 .footer-bottom {
     margin-top: 20px;
     font-size: 14px;
     color: #777;
-    text-align: center;
     border-top: 1px solid #ddd;
     padding-top: 15px;
 }
 
-/* Responsividad */
-@media (max-width: 768px) {
-    .contacto-container, .footer-content {
-        padding: 30px;
-    }
+.social-icons a {
+    display: inline-block;
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-right: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
 
+.social-icons a i {
+    font-size: 24px;
+    color: #333;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
     .footer-content {
         flex-direction: column;
         text-align: center;
+    }
+
+    .footer-info,
+    .footer-contact {
+        margin-top: 20px;
+    }
+
+    .social-icons {
+        justify-content: center;
     }
 }
