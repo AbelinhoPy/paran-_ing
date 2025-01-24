@@ -1,0 +1,140 @@
+/* Estilos generales para la sección de contacto */
+.contacto {
+    width: 100%;
+    padding: 100px 50px; /* Aumentado el espaciado para mayor resalte */
+    background-color: #e9ecef; /* Fondo ligeramente gris para resaltar el formulario */
+    box-sizing: border-box; /* Incluye el padding en el tamaño total */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal del formulario */
+.contacto-container {
+    max-width: 900px;
+    margin: 0 auto; /* Centra el contenido */
+    text-align: center;
+    background: #fff; /* Fondo blanco */
+    padding: 60px;
+    border: 3px solid #099fa6; /* Borde con color destacado */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Sombra más destacada */
+    position: relative;
+}
+
+/* Título principal de la sección */
+.contacto h2 {
+    font-size: 40px; /* Aumentado el tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espaciado inferior */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Espaciado entre letras */
+}
+
+/* Texto introductorio */
+.contacto p {
+    font-size: 20px; /* Tamaño del texto */
+    color: #555; /* Color gris oscuro */
+    margin-bottom: 30px; /* Espaciado inferior */
+    font-style: italic; /* Estilo en cursiva para mayor elegancia */
+}
+
+/* Estilos del formulario */
+.contacto form {
+    display: flex;
+    flex-direction: column; /* Alinea elementos en columna */
+    gap: 25px; /* Mayor separación entre elementos */
+}
+
+/* Campos de entrada del formulario */
+.contacto input,
+.contacto textarea {
+    width: 100%; /* Asegura el ancho completo */
+    padding: 18px; /* Espaciado interno aumentado */
+    font-size: 18px; /* Tamaño de fuente */
+    border: 2px solid #099fa6; /* Borde con color primario */
+    border-radius: 10px; /* Bordes redondeados */
+    outline: none; /* Elimina el borde de foco predeterminado */
+    background: #f8f9fa; /* Fondo sutil para contraste */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto al enfocar los campos */
+.contacto input:focus,
+.contacto textarea:focus {
+    border-color: #07798c; /* Cambio de color al seleccionar */
+    background: #fff; /* Fondo blanco al enfocar */
+    box-shadow: 0 0 10px rgba(9, 159, 166, 0.4);
+}
+
+/* Botón de enviar */
+.contacto button {
+    padding: 18px 40px; /* Espaciado interno */
+    font-size: 20px; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    background-color: #099fa6; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: 2px solid #07798c;
+    border-radius: 10px; /* Bordes redondeados */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Cambio de color al pasar el cursor */
+.contacto button:hover {
+    background-color: #07798c;
+    border-color: #055c63;
+    box-shadow: 0 5px 20px rgba(7, 121, 140, 0.5);
+}
+
+/* Efecto sombra al pasar el cursor */
+.contacto button:active {
+    transform: scale(0.98); /* Ligero efecto de presión */
+}
+
+/* Añadir un icono decorativo */
+.contacto-container::before {
+    content: "\f0e0"; /* Icono de sobre (email) de FontAwesome */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 50px;
+    color: #099fa6;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 50%;
+    border: 3px solid #099fa6;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .contacto {
+        padding: 60px 30px; /* Reducir padding en dispositivos pequeños */
+    }
+
+    .contacto-container {
+        padding: 40px;
+    }
+
+    .contacto h2 {
+        font-size: 32px;
+    }
+
+    .contacto p {
+        font-size: 16px;
+    }
+
+    .contacto input, 
+    .contacto textarea {
+        font-size: 16px;
+    }
+
+    .contacto button {
+        font-size: 18px;
+    }
+}

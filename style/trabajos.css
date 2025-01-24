@@ -1,0 +1,87 @@
+/* Estilos generales para la sección "Trabajos" */
+.trabajos {
+    padding: 80px 50px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+    background-color: #f8f9fa; /* Color de fondo */
+}
+
+/* Título principal de la sección */
+.trabajos h2 {
+    font-size: 36px; /* Tamaño del texto */
+    font-weight: bold; /* Texto en negrita */
+    color: #333; /* Color del texto */
+    margin-bottom: 40px; /* Espaciado inferior */
+}
+
+/* Estilo para cada diapositiva de la galería */
+.swiper-slide {
+    position: relative; /* Permite posicionar elementos internos de forma absoluta */
+    overflow: hidden; /* Oculta el contenido que se desborde */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilo de las imágenes dentro de las diapositivas */
+.swiper-slide img {
+    width: 100%; /* Asegura que las imágenes ocupen el ancho completo */
+    height: 300px; /* Altura fija para mantener uniformidad */
+    object-fit: cover; /* Recorta la imagen manteniendo proporción */
+    border-radius: 15px; /* Bordes redondeados */
+}
+
+/* Descripción de cada trabajo (aparece sobre la imagen) */
+.trabajo-descripcion {
+    position: absolute; /* Posición superpuesta */
+    bottom: 0; /* Se coloca en la parte inferior de la imagen */
+    left: 0; /* Alineación a la izquierda */
+    width: 100%; /* Ocupa todo el ancho */
+    background: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para mejorar visibilidad */
+    color: #fff; /* Color del texto */
+    padding: 15px; /* Espaciado interno */
+    font-size: 18px; /* Tamaño de fuente */
+    font-weight: bold; /* Texto en negrita */
+    text-align: left; /* Alinea el texto a la izquierda */
+    border-bottom-left-radius: 15px; /* Borde redondeado inferior izquierdo */
+    border-bottom-right-radius: 15px; /* Borde redondeado inferior derecho */
+}
+
+/* Flechas de navegación del carrusel */
+.swiper-button-next, 
+.swiper-button-prev {
+    color: #fff; /* Color de las flechas de navegación */
+}
+
+/* Indicadores de paginación */
+.swiper-pagination {
+    position: absolute;
+    bottom: 15px; /* Posición en la parte inferior */
+    left: 50%; /* Centra la paginación */
+    transform: translateX(-50%); /* Ajusta la posición exacta */
+}
+
+/* Responsividad para dispositivos más pequeños */
+@media (max-width: 768px) {
+    .trabajo-descripcion {
+        font-size: 14px; /* Reduce el tamaño del texto */
+        padding: 10px 15px; /* Ajusta el espaciado */
+    }
+
+    .trabajos h2 {
+        font-size: 28px; /* Reduce el tamaño del título en pantallas pequeñas */
+    }
+
+    .swiper-slide img {
+        height: 200px; /* Reduce la altura de las imágenes en móviles */
+    }
+}
+
+/* Estilos adicionales para mejorar la apariencia del carrusel */
+.swiper-pagination-bullet {
+    background: #099fa6; /* Color de los indicadores de paginación */
+    opacity: 0.7; /* Transparencia */
+}
+
+.swiper-pagination-bullet-active {
+    background: #266371; /* Color más oscuro para el indicador activo */
+    opacity: 1; /* Sin transparencia */
+}
