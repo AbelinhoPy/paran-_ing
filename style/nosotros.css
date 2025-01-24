@@ -12,58 +12,69 @@
     margin-bottom: 20px;  /* Espaciado inferior */
 }
 
-/* Contenedor principal flexbox para dividir la sección en dos columnas */
+/* Contenedor principal para organizar el contenido en dos columnas */
 .nosotros-content {
-    display: flex;  /* Usa flexbox para organizar los elementos */
+    display: flex;  /* Usa flexbox para distribuir elementos */
     flex-wrap: wrap;  /* Permite que los elementos se acomoden en varias líneas si es necesario */
-    justify-content: center;  /* Centra horizontalmente */
-    align-items: center;  /* Centra verticalmente */
+    justify-content: space-between;  /* Espacio entre los elementos */
+    align-items: flex-start;  /* Alineación superior */
     max-width: 1200px;  /* Ancho máximo de la sección */
     margin: 0 auto;  /* Centra el contenido en la página */
+    gap: 40px;  /* Espaciado entre columnas */
 }
 
 /* Columna izquierda que contiene imágenes y estadísticas */
 .nosotros-left {
     flex: 1;  /* Ocupa el espacio disponible */
-    padding: 20px;  /* Espaciado interno */
+    max-width: 45%;  /* Limita el ancho para evitar encimamientos */
+    text-align: center;  /* Centra el contenido */
 }
 
-/* Imágenes en la columna izquierda */
+/* Imagen principal en la columna izquierda */
 .nosotros-left img {
-    max-width: 100%;  /* Asegura que la imagen no sobresalga */
+    max-width: 60%;  /* Asegura que la imagen no sobresalga del contenedor */
+    height: auto;  /* Mantiene la proporción */
     border-radius: 10px;  /* Bordes redondeados */
+    margin-bottom: 20px;  /* Espaciado inferior */
 }
 
-/* Contenedor de estadísticas con diseño en fila */
+/* Contenedor de estadísticas en columna */
 .nosotros-stats {
     display: flex;  /* Organiza los elementos en fila */
     justify-content: center;  /* Centra horizontalmente */
     align-items: center;  /* Centra verticalmente */
-    margin-top: 20px;  /* Espaciado superior */
+    gap: 20px;  /* Espaciado entre elementos */
+    flex-wrap: wrap;  /* Permite ajustar en dispositivos pequeños */
 }
 
 /* Caja de estadísticas individuales */
 .nosotros-box {
     text-align: center;  /* Centra el texto */
-    margin: 0 20px;  /* Espaciado entre cajas */
+    padding: 15px;  /* Espaciado interno */
+    background: #fff;  /* Fondo blanco */
+    border: 1px solid #ddd;  /* Borde delgado */
+    border-radius: 10px;  /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Sombra sutil */
+    width: 120px;  /* Tamaño fijo de la caja */
 }
 
 /* Texto grande de estadísticas */
 .nosotros-box h3 {
-    font-size: 2em;  /* Tamaño de fuente grande */
+    font-size: 1.8em;  /* Tamaño de fuente grande */
     color: #007bff;  /* Color azul */
+    margin-bottom: 5px;  /* Espaciado inferior */
 }
 
 /* Texto pequeño dentro de las estadísticas */
 .nosotros-box p {
-    font-size: 1.2em;  /* Tamaño de fuente moderado */
+    font-size: 1.1em;  /* Tamaño de fuente moderado */
     color: #555;  /* Color gris oscuro */
 }
 
 /* Columna derecha de contenido */
 .nosotros-right {
     flex: 1;  /* Ocupa el espacio disponible */
-    padding: 20px;  /* Espaciado interno */
+    max-width: 50%;  /* Limita el ancho */
     text-align: left;  /* Alinea el texto a la izquierda */
 }
 
@@ -77,7 +88,7 @@
 /* Pestañas de navegación dentro de la sección derecha */
 .nosotros-tabs {
     display: flex;  /* Alinea en fila */
-    justify-content: space-around;  /* Espaciado uniforme */
+    justify-content: space-between;  /* Distribuye uniformemente */
     list-style: none;  /* Elimina viñetas */
     padding: 0;  /* Elimina relleno por defecto */
     border-bottom: 2px solid #ccc;  /* Línea divisoria inferior */
@@ -116,6 +127,10 @@
 @media (max-width: 768px) {
     .nosotros-content {
         flex-direction: column;  /* Organiza en columna */
+    }
+
+    .nosotros-left, .nosotros-right {
+        max-width: 100%;  /* Asegura que ocupen todo el ancho */
     }
 
     .nosotros-tabs {
