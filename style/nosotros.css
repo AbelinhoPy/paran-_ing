@@ -1,0 +1,113 @@
+/* Estilos generales para la sección "Nosotros" */
+.nosotros {
+    padding: 50px 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.nosotros h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.nosotros-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nosotros-left {
+    flex: 1;
+    padding: 20px;
+}
+
+.nosotros-left img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.nosotros-stats {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.nosotros-box {
+    text-align: center;
+    margin: 0 20px;
+}
+
+.nosotros-box h3 {
+    font-size: 2em;
+    color: #007bff;
+}
+
+.nosotros-box p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Estilos para la sección derecha */
+.nosotros-right {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.nosotros-right h3 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.nosotros-tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    border-bottom: 2px solid #ccc;
+}
+
+.nosotros-tabs .tab-link {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nosotros-tabs .tab-link.active {
+    color: #007bff;
+    border-bottom: 3px solid #007bff;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .nosotros-content {
+        flex-direction: column;
+    }
+
+    .nosotros-tabs {
+        flex-direction: column;
+    }
+
+    .nosotros-tabs .tab-link {
+        text-align: center;
+    }
+}
