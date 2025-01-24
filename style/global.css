@@ -1,0 +1,50 @@
+/* Importar la fuente Roboto Condensed desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* Reset global para eliminar márgenes y rellenos por defecto de los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Asegura que el padding y border no alteren el tamaño del elemento */
+    text-decoration: none; /* Elimina el subrayado de enlaces */
+    list-style: none; /* Quita los estilos de listas */
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: 'Roboto Condensed', Arial, sans-serif; /* Fuente principal */
+    background-color: #f8f9fa; /* Color de fondo */
+    color: #333; /* Color de texto principal */
+}
+
+/* Contenedor genérico para centrar y establecer un ancho máximo de contenido */
+.container {
+    max-width: 1200px; /* Limita el ancho máximo */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilos generales para botones de la página */
+.btn-1 {
+    display: inline-block; /* Permite margen y relleno */
+    padding: 15px 35px; /* Espaciado interno */
+    border-radius: 30px; /* Bordes redondeados */
+    text-transform: uppercase; /* Convierte texto a mayúsculas */
+    color: #fff; /* Color del texto */
+    background-color: #099fa6; /* Color de fondo */
+    font-weight: bold; /* Texto en negrita */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    transition: all 0.3s ease; /* Transición suave de efectos */
+}
+
+/* Cambio de color de botón al pasar el cursor */
+.btn-1:hover {
+    background-color: #266371; /* Cambio de color al hacer hover */
+}
+
+/* Diseño responsivo: ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px; /* Ajusta el padding para móviles */
+    }
+}

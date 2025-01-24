@@ -1,0 +1,97 @@
+/* Estilos responsivos generales */
+
+/* Ajustes para dispositivos con un ancho máximo de 1200px */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+/* Ajustes para tablets y pantallas medianas (máximo 991px) */
+@media (max-width: 991px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social,
+    .footer-info,
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-social a {
+        margin: 0 5px;
+    }
+}
+
+/* Ajustes para dispositivos móviles (máximo 768px) */
+@media (max-width: 768px) {
+    /* Ajustes generales de la página */
+    .container {
+        padding: 0 20px;
+    }
+
+    /* Menú de navegación en formato columna */
+    .menu {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .menu .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Mostrar menú cuando se activa el checkbox */
+    #menu:checked ~ .navbar {
+        display: flex;
+    }
+
+    .menu-icono {
+        display: block;
+    }
+
+    /* Ajuste de la sección de servicios */
+    .servicios-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Ajuste del formulario de contacto */
+    .contacto-container {
+        padding: 30px;
+    }
+
+    /* Ajuste del pie de página */
+    .footer-content {
+        flex-direction: column;
+        padding: 20px;
+    }
+}
+
+/* Ajustes adicionales para pantallas muy pequeñas (máximo 480px) */
+@media (max-width: 480px) {
+    .contacto h2,
+    .footer h4 {
+        font-size: 24px; /* Reducir tamaño de fuente */
+    }
+
+    .contacto p {
+        font-size: 16px;
+    }
+
+    .contacto button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+
+    .footer-social a {
+        font-size: 20px;
+    }
+}

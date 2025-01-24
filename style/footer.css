@@ -1,0 +1,188 @@
+/* Estilos generales para el pie de página */
+.footer {
+    background-color: #1c1c1c; /* Fondo oscuro para mejor contraste */
+    color: #fff; /* Color de texto blanco */
+    padding: 60px 0; /* Espaciado interno */
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Contenedor principal del footer */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite ajuste en pantallas pequeñas */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+    gap: 40px; /* Espaciado entre secciones */
+}
+
+/* Sección de redes sociales */
+.footer-social {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.footer-social h4 {
+    font-size: 24px; /* Tamaño del texto */
+    font-weight: bold;
+    color: #fff; /* Texto blanco */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #099fa6; /* Línea decorativa */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Iconos de redes sociales con efectos visuales */
+.footer-social a {
+    font-size: 28px; /* Tamaño del icono */
+    color: #099fa6; /* Color principal */
+    margin-right: 15px; /* Espaciado entre iconos */
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+/* Efecto hover de los iconos sociales */
+.footer-social a:hover {
+    color: #fff; /* Cambio de color */
+    transform: translateY(-5px); /* Efecto flotante */
+}
+
+/* Contenedor de la información de ubicación */
+.footer-location {
+    display: flex;
+    align-items: center;  /* Alineación vertical centrada */
+    gap: 10px;  /* Espaciado entre icono y texto */
+    font-size: 18px;  /* Tamaño del texto */
+    color: #fff;  /* Color del texto */
+    transition: all 0.3s ease; /* Efecto de transición */
+}
+
+/* Icono de ubicación */
+.footer-location i {
+    font-size: 24px; /* Tamaño del icono */
+    color: #099fa6;  /* Color del icono */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición suave */
+}
+
+/* Efecto hover para resaltar el icono y el texto */
+.footer-location:hover i {
+    color: #fff; /* Cambio de color del icono */
+    transform: scale(1.2); /* Efecto de zoom al pasar el mouse */
+}
+
+.footer-location a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: #099fa6;  /* Color del enlace */
+    font-weight: bold; /* Negrita */
+}
+
+/* Cambio de color al pasar el cursor sobre el enlace */
+.footer-location a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+
+/* Información de contacto */
+.footer-info {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.footer-info h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #099fa6;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-info p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.8;
+}
+
+/* Sección de contacto */
+.footer-contact {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.footer-contact h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #099fa6;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Estilos de los enlaces de contacto */
+.footer-contact a {
+    font-size: 20px;
+    font-weight: bold;
+    color: #099fa6;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Efecto hover en los enlaces de contacto */
+.footer-contact a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Derechos de autor en la parte inferior */
+.footer-bottom {
+    margin-top: 40px;
+    font-size: 16px;
+    color: #bbb;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-social,
+    .footer-info,
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-social a {
+        margin-right: 10px;
+        font-size: 26px;
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .footer h4 {
+        font-size: 20px;
+    }
+
+    .footer-contact a {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,130 @@
+/* Estilos de la cabecera principal */
+.header {
+    background-position: center center; /* Alinea la imagen de fondo */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-size: cover; /* La imagen ocupa todo el ancho */
+    display: flex;
+    position: relative;
+    min-height: 100vh; /* Altura mínima del viewport */
+    align-items: center; /* Centra contenido verticalmente */
+    justify-content: center; /* Centra contenido horizontalmente */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Superposición de fondo oscuro para mejorar contraste */
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Capa semitransparente */
+}
+
+/* Barra de menú superior */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 50px;
+    background: rgba(0, 0, 0, 0.5); /* Fondo transparente */
+    z-index: 1000; /* Asegura que esté en el frente */
+    width: 100%;
+}
+
+/* Logo en la cabecera */
+.logo {
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Estilos para el menú de navegación */
+.menu .navbar ul {
+    display: flex;
+    gap: 30px; /* Espaciado entre elementos */
+}
+
+/* Enlaces del menú */
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* Efecto hover en los enlaces del menú */
+.menu .navbar ul li a:hover {
+    color: #099fa6;
+}
+
+/* Estilos de los iconos de redes sociales */
+.icons {
+    display: flex;
+    gap: 15px; /* Espaciado entre iconos */
+}
+
+.icons i {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Diseño responsivo: Menú hamburguesa para móviles */
+.menu-icono {
+    display: none;
+    width: 35px;
+    cursor: pointer;
+}
+
+/* Diseño texto principal */
+.header-content {
+    position: relative;
+    z-index: 5;
+    max-width: 600px;
+    color: #fff;
+    margin: auto;
+}
+
+.header-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.header-content p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Ajustes responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .menu-icono {
+        display: block; /* Muestra icono hamburguesa */
+    }
+
+    .menu .navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: flex;
+    }
+}

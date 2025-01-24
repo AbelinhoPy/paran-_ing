@@ -1,0 +1,71 @@
+/* Estilos generales para la sección "Servicios" */
+.servicios {
+    padding: 80px 50px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+/* Título principal de la sección */
+.servicios h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Contenedor de los servicios */
+.servicios-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px; /* Espaciado entre elementos */
+    flex-wrap: wrap; /* Permite la adaptación a pantalla pequeña */
+}
+
+/* Tarjeta de servicio individual */
+.servicio-box {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Imagen dentro de la tarjeta */
+.servicio-box img {
+    width: 100%;
+    border-radius: 50%; /* Redondea la imagen */
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Título de la tarjeta */
+.servicio-box h3 {
+    font-size: 22px;
+    color: #099fa6;
+    margin-bottom: 10px;
+}
+
+/* Texto descriptivo */
+.servicio-box p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Efecto hover en las tarjetas */
+.servicio-box:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta */
+}
+
+/* Diseño responsivo */
+@media (max-width: 991px) {
+    .servicios-content {
+        flex-direction: column; /* Acomoda las tarjetas en columna */
+    }
+
+    .servicio-box {
+        max-width: 100%;
+    }
+}
