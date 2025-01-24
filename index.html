@@ -8,9 +8,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./style/carrusel.css">
+    <link rel="stylesheet" href="./style/carousel.css">
+
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="./style/carousel.css">
+
+        <!-- Enlazar CSS -->
+        <link rel="stylesheet" href="css/nosotros.css">
+    
+        <!-- FontAwesome para iconos -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body>
+<body id="pageBody">
     
     <header class="header">
        <div class="menu container">
@@ -41,7 +51,7 @@
            </p>
            <a href="#" class="btn-1">Sección menú</a>
 
-           <div class="images">
+           <!--<div class="images">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -68,28 +78,39 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
-           </div>
+           </div>  --> 
 
-            <!-- Sección del carrusel -->
-           <div class="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="images/carrusel/b1.jpg" alt="Imagen 1">
-              </div>
-              <div class="carousel-item">
-                <img src="images/carrusel/b2.jpg" alt="Imagen 2">
-              </div>
-              <div class="carousel-item">
-                <img src="images/carrusel/b3.jpg" alt="Imagen 3">
-              </div>
+            <div class="carousel-container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-bg="./images/1.jpg">
+                            <img src="./images/1.jpg" alt="Imagen 1">
+                            <h3>Proyectos Industriales</h3>
+                        </div>
+                        <div class="swiper-slide" data-bg="./images/22.jpg">
+                            <img src="./images/22.jpg" alt="Imagen 2">
+                            <h3>Consultorias</h3>
+                        </div>
+                        <div class="swiper-slide" data-bg="./images/33.jpg">
+                            <img src="./images/33.jpg" alt="Imagen 3">
+                            <h3>Gestión de Proyectos</h3>
+                        </div>
+                        <div class="swiper-slide" data-bg="./images/44.jpg">
+                            <img src="./images/44.jpg" alt="Imagen 4">
+                         <h3>Mantenimiento</h3>
+                        </div>
+                        <div class="swiper-slide" data-bg="./images/55.jpg">
+                            <img src="./images/55.jpg" alt="Imagen 5">
+                            <h3>Trabajos Realizados</h3>
+                        </div>
+                    </div>
+    
+                    <!-- Botones de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
             </div>
-            <!-- Controles del carrusel -->
-            <button class="carousel-control prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="carousel-control next" onclick="moveSlide(1)">&#10095;</button>
-          </div>
-       </div>
-
-        
+        </div>
 
     </header>
 
@@ -182,22 +203,22 @@
 </section>
 <section id="trabajos" class="trabajos">
     <h2>ALGUNOS DE NUESTROS TRABAJOS</h2>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
+    <div class="swiper mySwiper2">
+        <div class="swiper-wrapper2">
+            <div class="swiper-slide2">
                 <img src="images/trabajo.jpg" alt="Parque Industrial - C.D.E">
                 <div class="trabajo-descripcion">Parque Industrial - C.D.E.</div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide2">
                 <img src="images/trabajo2.jpg" alt="Parque Paraná">
                 <div class="trabajo-descripcion">Parque Industrial Parana</div>
             </div>
-            <div class="swiper-slide">
+            <div class="swiper-slide2">
                 <img src="images/trabajo3.jpg" alt="Construlogica Emprendimientos S.A.">
                 <div class="trabajo-descripcion">Construlogica Emprendimientos S.A.</div>
             </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination2"></div>
     </div>
 </section>
 
@@ -238,7 +259,14 @@
     </div>
 </footer>
 
-    <script src="js/carrusel.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/carousel.js"></script>
+    <!-- Enlazar JS -->
+    <script src="js/nosotros.js" defer></script>
+
+ <!--   <script src="./js/carousel.js"></script>
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
@@ -259,6 +287,6 @@
                 }
             }
         });
-    </script>
+    </script>-->
 </body>
 </html>

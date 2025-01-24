@@ -1,0 +1,76 @@
+/* Fondo de la página con transición */
+/* Cambia el fondo de la página según la imagen central del carrusel */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/1.jpg') no-repeat center center fixed; /* Imagen de fondo inicial */
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    transition: background 0.8s ease-in-out; /* Transición suave al cambiar el fondo */
+}
+
+/* Contenedor del carrusel */
+/* Ajusta el ancho y el margen del carrusel en la página */
+.carousel-container {
+    width: 80%; /* Cambia el ancho del carrusel (ajusta al 100% para pantalla completa) */
+    margin: 50px auto; /* Centra el carrusel horizontalmente y añade espacio superior/inferior */
+}
+
+/* Configuración general del carrusel (Swiper) */
+.swiper {
+    width: 100%; /* Ancho completo del contenedor */
+    padding: 20px 0; /* Espaciado superior e inferior alrededor de las diapositivas */
+}
+
+/* Estilo de cada diapositiva (Swiper-slide) */
+/* Aplica diseño a cada bloque del carrusel */
+.swiper-slide {
+    display: flex;
+    flex-direction: column; /* Coloca la imagen y el texto en columna */
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Centra los elementos verticalmente */
+    text-align: center; /* Centra el texto */
+    opacity: 0.5; /* Transparencia para las imágenes laterales */
+    transform: scale(0.85); /* Reduce el tamaño de las imágenes laterales */
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; /* Transiciones suaves para el tamaño y transparencia */
+
+    align-items: center;
+    position: relative;
+    margin-right: 30px;
+}
+
+/* Imagen dentro de cada diapositiva */
+/* Ajusta el diseño de las imágenes */
+.swiper-slide img {
+    width: 100%; /* Ajusta el ancho al 100% del bloque */
+    max-width: 800px; /* Limita el ancho máximo de las imágenes */
+    border-radius: 10px; /* Bordes redondeados de las imágenes */
+    margin-bottom: 15px; /* Espaciado entre la imagen y el texto */
+
+    display: block;
+    width: 100%;
+    height: 250px; /* Ajusta la altura fija */
+    object-fit: cover; /* Corta la imagen manteniendo la proporción */
+    border-radius: 15px;
+}
+
+/* Texto de cada diapositiva */
+/* Personaliza el estilo del título bajo cada imagen */
+.swiper-slide h3 {
+    font-size: 18px; /* Tamaño del texto */
+    color: #fff; /* Color del texto */
+}
+
+/* Imagen central resaltada */
+/* Estilo especial para la diapositiva que está activa */
+.swiper-slide-active {
+    opacity: 1; /* Totalmente visible */
+    transform: scale(1); /* Tamaño normal para resaltar la imagen */
+}
+
+/* Botones de navegación (Siguiente y Anterior) */
+/* Personaliza los botones del carrusel */
+.swiper-button-next, .swiper-button-prev {
+    color: white; /* Cambia el color de los iconos */
+    font-size: 20px; /* Ajusta el tamaño de los iconos */
+}
+
+
