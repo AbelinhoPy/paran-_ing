@@ -1,5 +1,9 @@
+
+
 /* Estilos de la cabecera principal */
 .header {
+    flex-direction: column; /* Asegura que los elementos estén uno debajo del otro */
+
     background-position: center center; /* Alinea la imagen de fondo */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
     background-size: cover; /* La imagen ocupa todo el ancho */
