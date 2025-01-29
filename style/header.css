@@ -2,17 +2,17 @@
 
 /* Estilos de la cabecera principal */
 .header {
-    flex-direction: column; /* Asegura que los elementos estén uno debajo del otro */
+    /*flex-direction: column; /* Asegura que los elementos estén uno debajo del otro */
 
     background-position: center center; /* Alinea la imagen de fondo */
     background-repeat: no-repeat; /* Evita la repetición de la imagen */
-    background-size: cover; /* La imagen ocupa todo el ancho */
+    /*background-size: cover; /* La imagen ocupa todo el ancho */
     display: flex;
     position: relative;
-    min-height: 100vh; /* Altura mínima del viewport */
+    min-height: 40vh; /* Altura mínima del viewport */
     align-items: center; /* Centra contenido verticalmente */
     justify-content: center; /* Centra contenido horizontalmente */
-    padding: 20px; /* Espaciado interno */
+    padding: 20px 20px 0px 20px ; /* Espaciado interno */
 }
 
 /* Superposición de fondo oscuro para mejorar contraste */
@@ -131,4 +131,6 @@
     #menu:checked ~ .navbar {
         display: flex;
     }
+
+    
 }

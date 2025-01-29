@@ -13,8 +13,9 @@ body {
 .carousel-container {
     width: 100%;
     max-width: 1400px;
-    margin: 20px auto; /* Reducido para disminuir espacio */
-    padding: 10px;
+    margin: /*20px*/auto auto; /* Reducido para disminuir espacio */
+    padding: 0px 10px 80px 10px;
+    background: rgba(0, 0, 0, 0.5); /* Capa semitransparente */
 }
 
 /* Configuración del carrusel */
@@ -62,7 +63,8 @@ body {
 /* Ocultar imágenes laterales en vista móvil */
 @media (max-width: 768px) {
     .carousel-container {
-        padding: 0 10px;
+        
+        padding: 0px 10px 40px 10px;
     }
 
     .swiper-slide {
@@ -84,4 +86,6 @@ body {
     .swiper-slide h3 {
         font-size: 20px;
     }
+
+    
 }
