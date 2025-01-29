@@ -37,25 +37,45 @@
         padding: 85px 25px 0px 25px;
     }
 
-    /* Menú de navegación en formato columna */
+    /* Ajuste del menú */
     .menu {
         flex-direction: column;
         padding: 10px 20px;
     }
 
-    .menu .navbar {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    /* Mostrar menú cuando se activa el checkbox */
-    #menu:checked ~ .navbar {
-        display: flex;
-    }
-
+    /* Mostrar icono de menú hamburguesa */
     .menu-icono {
         display: block;
+    }
+
+    /* Ocultar el menú por defecto */
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Estilos de enlaces en móviles */
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar ul li a {
+        display: block;
+        padding: 15px 0;
+        font-size: 20px;
+    }
+
+    /* Menú activo cuando se abre */
+    .navbar.active {
+        display: flex;
     }
 
     /* Ajuste de la sección de servicios */

@@ -111,7 +111,7 @@
     margin-bottom: 20px;
 }
 
-/* Ajustes responsivos para pantallas pequeñas */
+/* Ajustes responsivos para pantallas pequeñas 
 @media (max-width: 768px) {
     .menu {
         flex-direction: column;
@@ -120,7 +120,7 @@
 
     .menu-icono {
         display: block; /* Muestra icono hamburguesa */
-    }
+    /*}
 
     .menu .navbar {
         display: none;
@@ -133,4 +133,4 @@
     }
 
     
-}
+}*/
