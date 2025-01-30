@@ -159,6 +159,7 @@
         </div>
         
 </section>
+<!-- Aquí va la sección "servicios" -->
 <section id="servicios" class="servicios">
     <h2>NUESTROS SERVICIOS</h2>
     <div class="servicios-content">
@@ -184,6 +185,7 @@
         </div>
     </div>
 </section>
+<!-- Aquí va la sección "trabajos" -->
 <section id="trabajos" class="trabajos">
     <h2>ALGUNOS DE NUESTROS TRABAJOS</h2>
     <div class="swiper mySwiper2">
@@ -214,19 +216,81 @@
 </div>
 
 
-
+<!-- Aquí va la sección "Contaco" -->
 <section class="contacto">
     <div class="contacto-container">
         <h2>Contacte Con Nosotros</h2>
         <p>Complete nuestro formulario de contacto y uno de nuestros asesores se pondrá en contacto con usted.</p>
-        <form action="#">
+        <!--<form action="#">
             <input type="text" placeholder="Nombre" required>
             <input type="email" placeholder="Email" required>
             <input type="tel" placeholder="Teléfono" required>
             <textarea placeholder="Mensaje" rows="5" required></textarea>
             <button type="submit">Enviar Mensaje</button>
-        </form>
-    </div>
+        </form>-->
+        <!--<form action="https://docs.google.com/forms/d/e/1FAIpQLSdh_Vld7bbWok1Q5wiNv5wCelrAa1P9PHie9-tweWzLPZaYZw/viewform?usp=header" method="POST">
+            <input type="text" name="Nombre" placeholder="Nombre" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <input type="tel" name="Teléfono" placeholder="Teléfono" required>
+            <textarea name="Mensaje" placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>-->
+        <!--<form action="https://script.google.com/macros/s/AKfycbwCUwF4gEl9cdWBNt_Jl2x0uHckCJT0ueGkcqf_ZKOm-ofn38voAaGeuuGMBGZpzXlL/exec" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="telefono" placeholder="Teléfono" required>
+            <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>-->
+        
+
+        <!-- Formulario 
+<form id="contact-form">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="telefono" placeholder="Teléfono" required>
+    <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+    <button type="submit">Enviar Mensaje</button>
+</form>-->
+
+<!-- Mensaje de éxito o error 
+<div id="message" style="display: none; margin-top: 20px; padding: 10px; background-color: #e0f7fa; border: 1px solid #00bcd4; border-radius: 5px;"></div>
+-->
+<!-- Modal de confirmación 
+<div id="confirmation-modal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: white; padding: 20px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); border-radius: 10px; z-index: 1000;">
+    <p id="modal-message"></p>
+</div>-->
+
+<!-- Fondo oscuro para el modal 
+<div id="modal-overlay" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 999;">
+</div>-->
+
+<!--<form id="contact-form">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input type="tel" name="telefono" placeholder="Teléfono" required>
+    <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+    <button type="submit">Enviar Mensaje</button>
+</form>-->
+
+<form id="contact-form">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <input
+      type="tel"
+      name="telefono"
+      placeholder="Teléfono (Ej: +595123456789)"
+      pattern="\+\d{1,4}\d{7,14}"
+      title="Ingresa un número de teléfono válido con el código de país (Ej: +595123456789)"
+      required
+    >
+    <textarea name="mensaje" placeholder="Mensaje" rows="5" required></textarea>
+    <button type="submit">Enviar Mensaje</button>
+</form>
+
+<!-- Mensaje de éxito o error -->
+<div id="message" style="display: none; margin-top: 20px; padding: 10px; background-color: #e0f7fa; border: 1px solid #00bcd4; border-radius: 5px;"></div>
+
 </section>
 
 <footer class="footer">
@@ -272,30 +336,9 @@
     <script src="./js/main.js"></script>
     <script src="./js/carousel.js"></script>
     <!-- Enlazar JS -->
-    <script src="js/nosotros.js" defer></script>
-    <script src="js/modal_trabajos.js" defer></script>
+    <script src="./js/nosotros.js" defer></script>
+    <script src="./js/contactarnos.js"></script>
+    <script src="./js/modal_trabajos.js" defer></script>
 
- <!--   <script src="./js/carousel.js"></script>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
-            loop: true,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            breakpoints: {
-                768: {
-                    slidesPerView: 1
-                },
-                1024: {
-                    slidesPerView: 3
-                }
-            }
-        });
-    </script>-->
 </body>
 </html>
